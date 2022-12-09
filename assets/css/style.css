@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* common css */
+/* common css */
+
+
+/* login page css */
+
+.loginPage{
+    background-image: url('../images/adWl.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form{
+    width: 400px;
+    height: auto;
+    background-color: rgba(61, 52, 52, 0.212);
+    border-radius: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: #fff;
+}
+
+.login-form form {
+    padding: 12px;
+}
+
+.login-form form h2{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.login-form form input:not([type="checkbox"]){
+    margin: 7px 0 15px 0;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.login-form form input[type="checkbox"]{
+    cursor: pointer;
+    margin-bottom: 20px;
+
+}
+
+.login-form form .loginBtn{
+    width: 100%;
+    text-align: center;
+}
+
+.login-form form .loginBtn button{
+    padding: 0px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* login page css */
+
+/* dashboard page css */
+
+.dashboard{
+    width: 100%;
+    height: auto;
+}
+
+.dashboard .topbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(14, 12, 12);
+    color: #fff;
+    padding: 8px 28px;
+}
+
+.dashboard .topbar h3{
+    font-size: 25px;
+    margin-right: 19px;
+}
+
+.dashboard .topbar .leftTopBar{
+    display: flex;
+}
+
+.dashboard .topbar .rightTopBar button{
+    background-color: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.rightTopBar .fa-user{
+    margin-right: 10px;
+}
+
+.dashboard .topbar .toggleBtn{
+    cursor: pointer;
+}
+
+.dashboard main{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.dashboard .sideBar{
+    float: left;
+    width: 200px;
+    background-color: #000;
+    height: 100%;
+    color: #fff;
+    transition: 0.8s ;
+    -webkit-transition: 0.8s ;
+    -moz-transition: 0.8s ;
+    -ms-transition: 0.8s ;
+    -o-transition: 0.8s ;
+}
+
+.sideBar.toggleSidebar{
+    margin-left: -210px;
+    transition: 0.8s ease;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s ease;
+    -ms-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+}
+
+.dashboard .sideBar nav{
+    width: 100%;
+    padding: 25px 15px;
+}
+
+.dashboard .sideBar nav ul{
+    list-style-type: none;
+}
+
+.dashboard .sideBar nav ul li{
+    display: block;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+}
+
+.dashboard .sideBar nav ul li:hover{
+    background-color: #999;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+
+.dashboard footer{
+    width: 100%;
+    color: #fff;
+    background-color: #999;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dbDetails{
+    height: 100vh;
+    overflow-y: scroll;
+    float: right;
+    width: calc(100% - 200px);
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+
+/* blog post css */
+
+.blogPost{
+    width: 100%;
+    height: auto;
+}
+
+.blogForm{
+    width: 70%;
+    height: auto;
+    margin: 40px auto;
+    border: 1px solid #888;
+    padding: 18px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.blogForm h3{
+    text-align: center;
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.blogForm h3::after{
+    content: '';
+    height: 2px;
+    width: 150px;
+    background-color: #000;
+    display: block;
+    margin: 10px auto;
+}
+
+.blogForm form{
+    width: 100%;
+}
+
+.blogForm form input{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.blogForm form input, .blogForm form textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #999;
+    padding: 8px 10px;
+    resize: none;
+    margin: 5px 0 10px 0;
+}
+
+.blogForm form textarea{
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.blogForm form button{
+    margin-top: 20px;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: lightblue;
+    border: 1px solid lightgray
+}
+
+/* blog post css */
+
+/* admin users page css */
+
+.adminUsers{
+    width: 100%;
+    height: auto;
+}
+
+.adminUsers .userTable{
+    margin: 40px auto;
+    width: 80%;
+}
+
+.adminUsers .userTable table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+.adminUsers .userTable table tr th{
+    padding: 5px 0;
+}
+
+.adminUsers .userTable table tr th, .adminUsers .userTable table tr td{
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.adminUsers .userTable table tr td{
+    padding: 8px 0;
+}
+
+.adminUsers .userTable table  tbody tr:hover{
+    background-color: lightgray;
+}
+
+#adminRemove{
+    cursor: pointer;
+}
+
+/* admin users page css */
+
+/* dashboard page css */

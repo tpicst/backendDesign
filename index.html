@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css ">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+
+
+    <!-- admin login area -->
+
+    <div class="loginPage" style="display: none;">
+        <div class="login-form">
+            <form>
+                <h2>Admin Login</h2>
+                <label for="usernameormail">Usernname Or Email</label>
+                <input type="text" placeholder="Username or Email">
+                <label for="password">Password</label>
+                <input id="adminPass" type="password" placeholder="Password">
+                <input id="showPassCheck" type="checkbox"> <label for="showpass">Show Password</label>
+
+                <div class="loginBtn">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- admin login area -->
+
+    <!-- admin dashboard area -->
+
+    <div class="dashboard">
+        <div class="topbar">
+            <div class="leftTopBar">
+                <h3>Dashboard</h3>
+                <h3 class="toggleBtn"><i class="fa-solid fa-bars"></i></h3>
+            </div>
+
+            <div class="rightTopBar">
+                <button class="lgBtn"><i class="fa-solid fa-user"></i>Log Out </button>
+            </div>
+
+
+        </div>
+
+        <main>
+            <div class="sideBar">
+                <nav>
+                    <ul>
+                        <li>Overview</li>
+                        <li>Blog Post</li>
+                        <li>Link One</li>
+                        <li>Users</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="dbDetails">
+
+                
+
+                <!-- ======================= overview page =======================  -->
+                <div class="overview" hidden>
+
+                    <input id="viewPage" type="text" value="overview" hidden>
+
+                </div>
+                <!-- ======================= overview page =======================  -->
+
+                <!-- ===================== blog post ===================== -->
+
+                <div class="blogPost" >
+                    <input id="viewPage" type="text" value="blogPost" hidden>
+                    <div class="blogForm">
+                        <h3>Blog Post</h3>
+                        <form>
+
+                            <label for="adim">Admin Name : </label>
+                            <input id="adminName" type="text" value="Admin" disabled>
+
+                            <label for="time">Post Date</label>
+                            <input id="blogCurrDate"  disabled>
+
+                            <label for="time">Post Time</label>
+                            <input disabled id="blogCurrTime" type="datetime">
+
+                            <label for="blogTitle">Blog Title</label>
+                            <input type="text" placeholder="Max 150 length" minlength="50" maxlength="150">
+
+                            <label for="description">Blog Details</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Post Description"></textarea>
+
+                            <button>Submit Blog</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- ===================== blog post ===================== -->
+
+
+                <!-- ===================== users page ===================== -->
+
+                <div class="adminUsers" hidden>
+                    <input id="viewPage" type="text" value="adminUsers" hidden>
+                    <div class="userTable">
+                        <table>
+                            
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Admin Name</th>
+                                    <th>User Type</th>
+                                    <th>Email</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>Admin</td>
+                                    <td>Admin</td>
+                                    <td>tpicst20-21@gmail.com</td>
+                                    <td><button id="adminRemove">Remove</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- ===================== users page ===================== -->
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Computer Science & Technology(2020-21)</p>
+        </footer>
+    </div>
+
+    <!-- admin dashboard area -->
+
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+</body>
+
+</html>
